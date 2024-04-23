@@ -29,12 +29,12 @@ export default {
       axios.post("http://127.0.0.1:8000/api/categories", this.categorie)
         .then(({ data }) => {
           console.log(data);
-          alert("Sauvegardé avec succès");
+          alert("Saved successfully");
           this.$emit('category-added'); 
         })
         .catch(error => {
-          console.error("Erreur lors de la sauvegarde :", error);
-          alert("Échec de la sauvegarde");
+          console.error("Error saving :", error);
+          alert("Save failed");
         });
     }
   }
