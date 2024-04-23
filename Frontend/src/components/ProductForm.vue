@@ -28,6 +28,7 @@
 
 
 <script>
+import router from '@/router';
 import axios from 'axios';
 import mitt from 'mitt';
 
@@ -57,6 +58,7 @@ export default {
         .then(response => {
           console.log(response.data);
           alert("Product added successfully");
+          router.push('/products');
         })
         .catch(error => {
           console.error("Error adding the product :", error);
