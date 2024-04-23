@@ -56,11 +56,11 @@ export default {
       axios.post("http://127.0.0.1:8000/api/products", formData) 
         .then(response => {
           console.log(response.data);
-          alert("Produit ajouté avec succès");
+          alert("Product added successfully");
         })
         .catch(error => {
-          console.error("Erreur lors de l'ajout du produit :", error);
-          alert("Échec de l'ajout du produit");
+          console.error("Error adding the product :", error);
+          alert("Product addition failed");
         });
     },
     handleFileUpload(e) {
@@ -72,7 +72,7 @@ export default {
           this.categories = data;
         })
         .catch(error => {
-          console.error("Erreur lors de la récupération des catégories :", error);
+          console.error("Error retrieving categories :", error);
         });
     }
   },
