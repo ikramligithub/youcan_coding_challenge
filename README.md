@@ -64,7 +64,7 @@ export const backendBaseUrl = 'http://127.0.0.1:8000/api';
 ```
 ### Start the server
 ```bash
- npm run dev
+ npm run serve
 ```
 ## CLI
 To add a product from the CLI, use the following command:
